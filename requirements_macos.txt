@@ -1,0 +1,25 @@
+# CV Event Detector - macOS Requirements
+# Optimized for Apple Silicon (M1/M2/M3/M4) with Metal GPU support
+
+# Core dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+python-multipart>=0.0.6
+
+# Computer Vision
+opencv-python>=4.8.0
+numpy>=1.24.0
+pillow>=10.0.0
+
+# PyTorch with Metal (MPS) support for Apple Silicon
+# Note: These are CPU-only wheels for macOS, MPS is built-in
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Utilities
+requests>=2.31.0
+python-dateutil>=2.8.0
+
+# Optional: For better performance on Intel Macs
+# mkl-service>=2.4.0; platform_machine == "x86_64"
